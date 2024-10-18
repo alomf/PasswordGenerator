@@ -29,18 +29,6 @@ p {
     color: #4ADF86;
 }
 
-#password-length{
-    margin: 20px 0 20px 0;
-    width: 350px;
-    padding: 20px;
-    font-size: 16px;
-    color: #FFFFFF;
-    background-color: #1F2937;
-    border: none;
-    border-bottom: 1px solid #2F3E53;
-    outline: none;
-}
-
 #generate-btn {
     display: block;
     margin-top: 20px;
@@ -53,7 +41,7 @@ p {
     
 }
 hr {
-    border: 1px solid #2F3E53;
+    border: 2px solid #2F3E53;
     margin: 25px 0;
 }
 
@@ -62,16 +50,13 @@ hr {
     width: auto;
 }
 
-.copy-btn {
-    width: 215px;
+.password-btn {
+    width: 175px;
     margin: 0 20px 0 0;
     padding: 10px 20px;
     border: none;
     border-radius: 5px; 
     background-color: #273549;
     color: #55F991;
-}
-
-.btn {
-    background: #273549;
+    text-align: center;
 }

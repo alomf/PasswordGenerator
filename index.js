@@ -25,3 +25,28 @@ const charactersFull = [
     "~","`","!","@","#","$","%","^","&","*","(",")","_","-","+",
     "=","{","[","}","]",",","|",":",";","<",">",".","?","/"
 ]
+
+let firstPasswordEl = document.getElementById("first-password");
+let secondPasswordEl = document.getElementById("second-password");
+let generatedPassword1 = "";
+let generatedPassword2 = "";
+
+function generate() {
+    generatedPassword1 = "";
+    firstPasswordEl.textContent = "";
+    generatedPassword2 = "";
+    secondPasswordEl.textContent = "";
+    for (let i = 0; i < 20; i++) {
+        let password = Math.floor(Math.random() * characters.length);
+        generatedPassword1 += characters[password];
+
+        firstPasswordEl.textContent = generatedPassword1;
+    }
+    
+    for (let i = 0; i < 20; i++) {
+        let password = Math.floor(Math.random() * charactersNumbers.length);
+        generatedPassword2 += charactersNumbers[password];
+
+        secondPasswordEl.textContent = generatedPassword2;
+    }
+}

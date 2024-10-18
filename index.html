@@ -1,64 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="index.css">
-        <title>Password Generator</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    </head>
-    
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
 
-        <div class="container">
-            <!-- HEADING -->
-            <h1>Generate a</h1>
-            <span class="subheading">random password</span>
-            <p>Never use an insecure password again.</p>
-            
-            <!-- PASSWORD LENGTH -->
-            <label for="password-length">Length:</label>
-            <input id="password-length" type="number" min="8" placeholder="length for a secure password should be 8 characters min">
-            
-            <!-- TOGGLE NUMBERS -->
-            <div class="toggle">
-                <label class="switch">
-                    <input type="checkbox" id="add-numbers">
-                    <span class="slider-round"></span>
-                </label>
-                <label class="password-content">Add Numbers</label>
+<body>
+    <div class="container">
+
+        <!-- HEADING -->
+        <h1>Generate a</h1>
+        <span class="subheading">random password</span>
+        <p>Never use an insecure password again.</p>
+
+        <!-- GENERATE PASSWORD BUTTON -->
+        <button id="generate-btn" onclick="generate()">Generate password</button>
+        
+        <hr>
+        
+        <!-- PASSWORDS ONE AND TWO -->
+        <div class="password-container">
+            <div class="first-password">
+                <div class="password-btn" id="first-password">Password</div>
             </div>
-
-            <!-- TOGGLE SYMBOLS -->
-            <div class="toggle">
-                <label class="switch">
-                    <input type="checkbox" id="add-symbols">
-                    <span class="slider-round"></span>
-                </label>
-                <label class="password-content">Add Symbols</label>
-            </div>
-
-            <!-- GENERATE PASSWORD BUTTON -->
-            <button id="generate-btn">Generate password</button>
-
-            <hr>
-
-            <!-- PASSWORDS ONE AND TWO -->
-            <div class="password-container">
-                <div class="first-password">
-                    <div class="password" id="first-password"></div>
-                    <button class="copy-btn" id="copy-btn-1">Password 1</button>
-                </div>
-                <div class="second-password">
-                    <div class="password" id="second-password"></div>
-                    <button class="copy-btn" id="copy-btn-2">Password 2</button>
-                </div>
+            <div class="second-password">
+                <div class="password-btn" id="second-password">Password</div>
             </div>
         </div>
-
-        <script src="index.js"></script>
-
-    </body>
-
+    </div>
+    <script src="index.js"></script>
+</body>
 </html>
