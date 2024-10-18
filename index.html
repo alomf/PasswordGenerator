@@ -18,8 +18,8 @@
             <p>Never use an insecure password again.</p>
             
             <!-- PASSWORD LENGTH -->
-            <label for="password-length">Length: </label>
-            <input id="password-length" type="number" min="8" placeholder="length for a secure password should be 8 min characters">
+            <label for="password-length">Length:</label>
+            <input id="password-length" type="number" min="8" placeholder="length for a secure password should be 8 characters min">
             
             <!-- TOGGLE NUMBERS -->
             <div class="toggle">
@@ -42,15 +42,17 @@
             <!-- GENERATE PASSWORD BUTTON -->
             <button id="generate-btn">Generate password</button>
 
+            <hr>
+
             <!-- PASSWORDS ONE AND TWO -->
-            <div class="passwords">
+            <div class="password-container">
                 <div class="first-password">
                     <div class="password" id="first-password"></div>
-                    <button></button>
+                    <button class="copy-btn" id="copy-btn-1">Password 1</button>
                 </div>
                 <div class="second-password">
                     <div class="password" id="second-password"></div>
-                    <button></button>
+                    <button class="copy-btn" id="copy-btn-2">Password 2</button>
                 </div>
             </div>
         </div>

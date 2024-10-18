@@ -37,7 +37,7 @@ p {
     color: #FFFFFF;
     background-color: #1F2937;
     border: none;
-    border-bottom: 1px solid #D5D4D8;
+    border-bottom: 1px solid #2F3E53;
     outline: none;
 }
 
@@ -50,6 +50,28 @@ p {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     
+}
+hr {
+    border: 1px solid #2F3E53;
+    margin: 25px 0;
+}
+
+.password-container {
+    display: flex;
+    width: auto;
+}
+
+.copy-btn {
+    width: 215px;
+    margin: 0 20px 0 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; 
+    background-color: #273549;
+    color: #55F991;
+}
+
+.btn {
+    background: #273549;
 }
