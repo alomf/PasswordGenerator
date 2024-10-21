@@ -18,17 +18,17 @@
         <p>Never use an insecure password again.</p>
 
         <!-- GENERATE PASSWORD BUTTON -->
-        <button id="generate-btn" onclick="generate()">Generate password</button>
+        <button id="generate-btn">Generate password</button>
         
         <hr>
         
         <!-- PASSWORDS ONE AND TWO -->
         <div class="password-container">
             <div class="first-password">
-                <div class="password-btn" id="first-password">Password</div>
+                <div class="password-btn" id="password1-el" onclick="passwordCopy1()">Password</div>
             </div>
             <div class="second-password">
-                <div class="password-btn" id="second-password">Password</div>
+                <div class="password-btn" id="password2-el" onclick="passwordCopy2()">Password</div>
             </div>
         </div>
     </div>
